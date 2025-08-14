@@ -11,7 +11,7 @@ type DebateCardTitleProps = {
 
 const DebateCardTitle: React.FC<DebateCardTitleProps> = ({ debate }) => {
   return (
-    <div className="grid w-full grid-cols-[4rem_1fr] gap-4 p-4">
+    <div className="grid w-full grid-cols-[4rem_1fr] gap-4 p-4 hover:underline">
       <Image
         src={debate.image}
         alt={debate.title}

@@ -14,7 +14,7 @@ const Nav: React.FC<NavProps> = () => {
   return (
     <nav
       className={clsx(
-        "fixed top-0 left-0 w-full h-18 flex justify-between",
+        "fixed top-0 left-0 w-full h-18 flex justify-between z-40",
         "bg-background/90 p-4 text-foreground backdrop-blur-sm",
       )}
     >

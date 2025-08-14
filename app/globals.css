@@ -7,6 +7,7 @@
   --background: #122F33;
   --foreground: #fff;
   --border: #375458;
+  --border-foreground: #E4E4E7;
   --text: #000;
   --light-green: #A9F576;
   --logo: #C3F2E1;
@@ -25,6 +26,7 @@
   --color-green: var(--green);
   --color-red: var(--red);
   --color-muted: var(--muted);
+  --color-border-foreground: var(--border-foreground);
 }
 
 body {

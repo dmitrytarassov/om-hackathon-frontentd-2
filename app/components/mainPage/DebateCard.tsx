@@ -18,7 +18,7 @@ type DebateCardProps = {
 const DebateCard: React.FC<DebateCardProps> = ({ debate }) => {
   return (
     <Link href={`/debate?id=${debate.opinionId}`}>
-      <Block hullHeight className="justify-between">
+      <Block hullHeight className="justify-between hover:shadow-2xl">
         <div className="flex w-full flex-col">
           <DebateCardHeader debate={debate} />
           <DebateProcess value={debate.yesPercent} />
