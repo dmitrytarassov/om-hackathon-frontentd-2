@@ -1,0 +1,19 @@
+.dashes{
+    height: 12px;                 /* толщина полосы */
+    background:
+            repeating-linear-gradient(
+                    to right,
+                    #8bc34a 0 12px,           /* цвет 1 и длина штриха */
+                    transparent 12px 24px     /* зазор */
+            );
+    /* плавный переход цвета слева направо поверх штрихов */
+    mask: repeating-linear-gradient(
+            to right, #000 0 12px, transparent 12px 24px
+    );                            /* поддержка Chrome/Edge/Opera */
+    -webkit-mask: repeating-linear-gradient(
+            to right, #000 0 12px, transparent 12px 24px
+    );
+
+    background-image:
+            linear-gradient(to right, #8bc34a, #ff5722); /* градиентный цвет */
+}
