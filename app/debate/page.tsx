@@ -2,9 +2,9 @@
 
 import { useSearchParams } from "next/navigation";
 
+import DebatePageLayout from "@/app/components/debate/DebatePageLayout";
 import DebateMainContent from "@/app/components/debate/mainContent/DebateMainContent";
 import DebateSidebar from "@/app/components/debate/sidebar/DebateSidebar";
-import PageLayout from "@/app/components/layout/PageLayout";
 import { debates } from "@/data/debates";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
   if (!debate) return null;
 
   return (
-    <PageLayout
+    <DebatePageLayout
       content={<DebateMainContent debate={debate} />}
       sidebar={<DebateSidebar debate={debate} />}
     />

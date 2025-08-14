@@ -2,12 +2,15 @@
 
 import React from "react";
 
-type PageLayoutProps = {
+type DebatePageLayoutProps = {
   content: React.ReactNode;
   sidebar: React.ReactNode;
 };
 
-const PageLayout: React.FC<PageLayoutProps> = ({ content, sidebar }) => {
+const DebatePageLayout: React.FC<DebatePageLayoutProps> = ({
+  content,
+  sidebar,
+}) => {
   return (
     <div className="w-full grid grid-cols-12 gap-4">
       <div className="col-span-6 md:col-span-8 lg:col-span-9">{content}</div>
@@ -16,4 +19,4 @@ const PageLayout: React.FC<PageLayoutProps> = ({ content, sidebar }) => {
   );
 };
 
-export default PageLayout;
+export default DebatePageLayout;

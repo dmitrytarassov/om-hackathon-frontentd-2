@@ -1,6 +1,7 @@
 "use client";
 
 import clsx from "clsx";
+import Link from "next/link";
 import React from "react";
 
 import AccountButton from "@/app/components/accountButton/AccountButton";
@@ -17,9 +18,9 @@ const Nav: React.FC<NavProps> = () => {
         "bg-background/90 p-4 text-foreground backdrop-blur-sm",
       )}
     >
-      <div className="font-bold text-xl text-logo">
+      <Link href="/" className="font-bold text-xl text-logo">
         Opinion Market<span className="text-success">.</span>
-      </div>
+      </Link>
       <div>
         <AccountButton />
       </div>
